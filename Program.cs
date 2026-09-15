@@ -65,20 +65,61 @@
 // Console.WriteLine($"Может пересдать (оценка ИЛИ посещаемость): {canRetakeExam}");
 // Console.WriteLine($"Нет долгов: {isDebtFree}");
 
+// Console.WriteLine();
+// Console.WriteLine("Короткое замыкание");
+
+// bool CheckAndPrint(string label, bool value)
+// {
+//     Console.WriteLine($" Вычисляется: {label}");
+//     return value;
+// }
+
+// Console.WriteLine("Проверяем && (первый операнд false):");
+// bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
+// Console.WriteLine($"Результат: {resultAnd}");
+
+// Console.WriteLine();
+// Console.WriteLine("Проверяем || (первый операнд true)");
+// bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
+// Console.WriteLine($"Результат: {resultOr}");
+
+// Console.WriteLine();
+// Console.WriteLine("Приоритет операций");
+
+// int resultNoParens = 2 + 3 * 4;
+// int resultWithParens = (2 + 3) * 4;
+// Console.WriteLine($"2 + 3 * 4               = {resultNoParens}");
+// Console.WriteLine($"(2 + 3) * 4             = {resultWithParens}");
+
+// bool logicResult = 5 > 3 && 2 < 4 || false;
+// bool logicResultParens = (5 > 3 && 2 < 4) || false;
+// Console.WriteLine($"5>3 && 2<4 || false     = {logicResult}");
+// Console.WriteLine($"(5>3 && 2<4) || false   = {logicResultParens}");
+
+
 Console.WriteLine();
-Console.WriteLine("Короткое замыкание");
+Console.WriteLine("Приёмная комиссия");
 
-bool CheckAndPrint(string label, bool value)
-{
-    Console.WriteLine($" Вычисляется: {label}");
-    return value;
-}
+Console.Write("Введите средний балл аттестата: ");
+double averageGrade = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Проверяем && (первый операнд false):");
-bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
-Console.WriteLine($"Результат: {resultAnd}");
+Console.Write("Введите баллы за экзамен (0-100): ");
+int examScore = int.Parse(Console.ReadLine());
+
+Console.Write("Есть льгота? (1 - да, 0 - нет): ");
+int benefitInput = int.Parse(Console.ReadLine());
+bool hasBenefit = (benefitInput == 1);
+bool hasGoodCeritificate = (averageGrade >= 4.0);
+bool hasGoodExam = (examScore >= 60);
+bool isEligibleByRules = (hasGoodCeritificate && hasGoodExam) || hasBenefit;
+double totalScore = averageGrade * 10;
+totalScore += examScore;
 
 Console.WriteLine();
-Console.WriteLine("Проверяем || (первый операнд true)");
-bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
-Console.WriteLine($"Результат: {resultOr}");
+Console.WriteLine("Результат");
+Console.WriteLine($"Хороший аттеста (>= 4.0): {hasGoodCeritificate}");
+Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
+Console.WriteLine($"Льгота: {hasBenefit}");
+Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
+Console.WriteLine($"Итоговый балл: {totalScore}");
+
