@@ -96,30 +96,35 @@
 // Console.WriteLine($"5>3 && 2<4 || false     = {logicResult}");
 // Console.WriteLine($"(5>3 && 2<4) || false   = {logicResultParens}");
 
+// Console.WriteLine();
+// Console.WriteLine("Приёмная комиссия");
 
-Console.WriteLine();
-Console.WriteLine("Приёмная комиссия");
+// Console.Write("Введите средний балл аттестата: ");
+// double averageGrade = double.Parse(Console.ReadLine());
 
-Console.Write("Введите средний балл аттестата: ");
-double averageGrade = double.Parse(Console.ReadLine());
+// Console.Write("Введите баллы за экзамен (0-100): ");
+// int examScore = int.Parse(Console.ReadLine());
 
-Console.Write("Введите баллы за экзамен (0-100): ");
-int examScore = int.Parse(Console.ReadLine());
+// Console.Write("Есть льгота? (1 - да, 0 - нет): ");
+// int benefitInput = int.Parse(Console.ReadLine());
+// bool hasBenefit = (benefitInput == 1);
+// bool hasGoodCeritificate = (averageGrade >= 4.0);
+// bool hasGoodExam = (examScore >= 60);
+// bool isEligibleByRules = (hasGoodCeritificate && hasGoodExam) || hasBenefit;
+// double totalScore = averageGrade * 10;
+// totalScore += examScore;
 
-Console.Write("Есть льгота? (1 - да, 0 - нет): ");
-int benefitInput = int.Parse(Console.ReadLine());
-bool hasBenefit = (benefitInput == 1);
-bool hasGoodCeritificate = (averageGrade >= 4.0);
-bool hasGoodExam = (examScore >= 60);
-bool isEligibleByRules = (hasGoodCeritificate && hasGoodExam) || hasBenefit;
-double totalScore = averageGrade * 10;
-totalScore += examScore;
+// Console.WriteLine();
+// Console.WriteLine("Результат");
+// Console.WriteLine($"Хороший аттеста (>= 4.0): {hasGoodCeritificate}");
+// Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
+// Console.WriteLine($"Льгота: {hasBenefit}");
+// Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
+// Console.WriteLine($"Итоговый балл: {totalScore}");
 
-Console.WriteLine();
-Console.WriteLine("Результат");
-Console.WriteLine($"Хороший аттеста (>= 4.0): {hasGoodCeritificate}");
-Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
-Console.WriteLine($"Льгота: {hasBenefit}");
-Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
-Console.WriteLine($"Итоговый балл: {totalScore}");
+Console.Write("Введите целое число: ");
+int yourNum = int.Parse(Console.ReadLine());
+
+bool isEven = yourNum % 2;
+Console.WriteLine(isEven);
 
