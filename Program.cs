@@ -134,35 +134,35 @@ Console.WriteLine();
 Console.WriteLine("Префиксное прибавление:");
 
 int x = 5;
-Console.WriteLine($"До: {++x}"); 
+Console.WriteLine($"До: {++x}"); // увеличивает значение переменной на 1, а затем возвращает новое значение
 Console.WriteLine($"После: {x}");
 
 Console.WriteLine();
 Console.WriteLine("Постфиксное прибавление:");
 
 int a = 6;
-Console.WriteLine($"До: {a++}");
+Console.WriteLine($"До: {a++}"); // сначала возвращает текущее значение переменной, а затем увеличивает её на 1.
 Console.WriteLine($"После: {a}");
 
 Console.WriteLine();
 Console.WriteLine("Префиксное убавление:");
 
 int y = 5;
-Console.WriteLine($"До: {--y}"); 
+Console.WriteLine($"До: {--y}"); // уменьшает значение переменной на 1, а затем возвращает новое значение
 Console.WriteLine($"После: {y}");
 
 Console.WriteLine();
 Console.WriteLine("Постфиксное убавление:");
 
 int g = 6;
-Console.WriteLine($"До: {g--}");
-Console.WriteLine($"После: {g}");
+Console.WriteLine($"До: {g--}"); // сначала возвращает текущее значение переменной, а затем уменьшает её на 1.
+Console.WriteLine($"После: {g}"); 
 
 Console.WriteLine();
 Console.WriteLine("Составной:");
 
 int c = 60;
 Console.WriteLine($"До: {c}");
-Console.WriteLine($"После: {c += 7}");
+Console.WriteLine($"После: {c += 7}"); // прибавляет указанное значение к переменной
 
 
