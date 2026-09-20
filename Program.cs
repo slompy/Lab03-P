@@ -166,25 +166,27 @@
 // Console.WriteLine($"После: {c += 7}"); // прибавляет указанное значение к переменной
 
 
-// Задание 3.
-Console.Write("Напишите сумму покупки:");
-double summa = double.Parse(Console.ReadLine());
-Console.WriteLine($"Сумма: {summa}");
-Console.WriteLine();
+// // Задание 3.
+// Console.Write("Напишите сумму покупки:");
+// double summa = double.Parse(Console.ReadLine());
+// Console.WriteLine($"Сумма: {summa}");
+// Console.WriteLine();
 
-Console.Write("Есть ли карта постоянного клиента (1 - да, 0 - нет):");
-int card = int.Parse(Console.ReadLine());
-bool hasCard = (card == 1);
-Console.WriteLine($"Карта: {hasCard}");
-Console.WriteLine();
+// Console.Write("Есть ли карта постоянного клиента (1 - да, 0 - нет):");
+// int card = int.Parse(Console.ReadLine());
+// bool hasCard = (card == 1);
+// Console.WriteLine($"Карта: {hasCard}");
+// Console.WriteLine();
 
-Console.Write("Напишите количество товаров в чеке:");
-int count = int.Parse(Console.ReadLine());
-Console.WriteLine($"Товаров: {count}");
-Console.WriteLine();
+// Console.Write("Напишите количество товаров в чеке:");
+// int count = int.Parse(Console.ReadLine());
+// Console.WriteLine($"Товаров: {count}");
+// Console.WriteLine();
 
-bool eligibleForDiscount = summa >=3000 && count >=3 || hasCard;
+// bool eligibleForDiscount = summa >=3000 && count >=3 || hasCard;
 
-Console.WriteLine($"Будем ли вам скидка: {eligibleForDiscount}");
+// Console.WriteLine($"Будем ли вам скидка: {eligibleForDiscount}");
 
 
+int numberForDm = 10 - (2 * 3) + (4 / 2);
+Console.WriteLine(numberForDm);
