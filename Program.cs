@@ -122,10 +122,47 @@
 // Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 // Console.WriteLine($"Итоговый балл: {totalScore}");
 
-// Задание 1.
-Console.Write("Введите целое число: ");
-int yourNum = int.Parse(Console.ReadLine());
-int yourNumIs =  yourNum % 2;
-bool isEven = yourNumIs == 0;
-Console.WriteLine(isEven);
+// // Задание 1.
+// Console.Write("Введите целое число: ");
+// int yourNum = int.Parse(Console.ReadLine());
+// int yourNumIs =  yourNum % 2;
+// bool isEven = yourNumIs == 0;
+// Console.WriteLine(isEven);
+
+// Задание 2.
+Console.WriteLine();
+Console.WriteLine("Префиксное прибавление:");
+
+int x = 5;
+Console.WriteLine($"До: {++x}"); 
+Console.WriteLine($"После: {x}");
+
+Console.WriteLine();
+Console.WriteLine("Постфиксное прибавление:");
+
+int a = 6;
+Console.WriteLine($"До: {a++}");
+Console.WriteLine($"После: {a}");
+
+Console.WriteLine();
+Console.WriteLine("Префиксное убавление:");
+
+int y = 5;
+Console.WriteLine($"До: {--y}"); 
+Console.WriteLine($"После: {y}");
+
+Console.WriteLine();
+Console.WriteLine("Постфиксное убавление:");
+
+int g = 6;
+Console.WriteLine($"До: {g--}");
+Console.WriteLine($"После: {g}");
+
+Console.WriteLine();
+Console.WriteLine("Составной:");
+
+int c = 60;
+Console.WriteLine($"До: {c}");
+Console.WriteLine($"После: {c += 7}");
+
 
