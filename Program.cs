@@ -130,39 +130,61 @@
 // Console.WriteLine(isEven);
 
 // Задание 2.
+// Console.WriteLine();
+// Console.WriteLine("Префиксное прибавление:");
+
+// int x = 5;
+// Console.WriteLine($"До: {++x}"); // увеличивает значение переменной на 1, а затем возвращает новое значение
+// Console.WriteLine($"После: {x}");
+
+// Console.WriteLine();
+// Console.WriteLine("Постфиксное прибавление:");
+
+// int a = 6;
+// Console.WriteLine($"До: {a++}"); // сначала возвращает текущее значение переменной, а затем увеличивает её на 1.
+// Console.WriteLine($"После: {a}");
+
+// Console.WriteLine();
+// Console.WriteLine("Префиксное убавление:");
+
+// int y = 5;
+// Console.WriteLine($"До: {--y}"); // уменьшает значение переменной на 1, а затем возвращает новое значение
+// Console.WriteLine($"После: {y}");
+
+// Console.WriteLine();
+// Console.WriteLine("Постфиксное убавление:");
+
+// int g = 6;
+// Console.WriteLine($"До: {g--}"); // сначала возвращает текущее значение переменной, а затем уменьшает её на 1.
+// Console.WriteLine($"После: {g}"); 
+
+// Console.WriteLine();
+// Console.WriteLine("Составной:");
+
+// int c = 60;
+// Console.WriteLine($"До: {c}");
+// Console.WriteLine($"После: {c += 7}"); // прибавляет указанное значение к переменной
+
+
+// Задание 3.
+Console.Write("Напишите сумму покупки:");
+double summa = double.Parse(Console.ReadLine());
+Console.WriteLine($"Сумма: {summa}");
 Console.WriteLine();
-Console.WriteLine("Префиксное прибавление:");
 
-int x = 5;
-Console.WriteLine($"До: {++x}"); // увеличивает значение переменной на 1, а затем возвращает новое значение
-Console.WriteLine($"После: {x}");
-
+Console.Write("Есть ли карта постоянного клиента (1 - да, 0 - нет):");
+int card = int.Parse(Console.ReadLine());
+bool hasCard = (card == 1);
+Console.WriteLine($"Карта: {hasCard}");
 Console.WriteLine();
-Console.WriteLine("Постфиксное прибавление:");
 
-int a = 6;
-Console.WriteLine($"До: {a++}"); // сначала возвращает текущее значение переменной, а затем увеличивает её на 1.
-Console.WriteLine($"После: {a}");
-
+Console.Write("Напишите количество товаров в чеке:");
+int count = int.Parse(Console.ReadLine());
+Console.WriteLine($"Товаров: {count}");
 Console.WriteLine();
-Console.WriteLine("Префиксное убавление:");
 
-int y = 5;
-Console.WriteLine($"До: {--y}"); // уменьшает значение переменной на 1, а затем возвращает новое значение
-Console.WriteLine($"После: {y}");
+bool eligibleForDiscount = summa >=3000 && count >=3 || hasCard;
 
-Console.WriteLine();
-Console.WriteLine("Постфиксное убавление:");
-
-int g = 6;
-Console.WriteLine($"До: {g--}"); // сначала возвращает текущее значение переменной, а затем уменьшает её на 1.
-Console.WriteLine($"После: {g}"); 
-
-Console.WriteLine();
-Console.WriteLine("Составной:");
-
-int c = 60;
-Console.WriteLine($"До: {c}");
-Console.WriteLine($"После: {c += 7}"); // прибавляет указанное значение к переменной
+Console.WriteLine($"Будем ли вам скидка: {eligibleForDiscount}");
 
 
