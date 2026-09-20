@@ -122,9 +122,10 @@
 // Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 // Console.WriteLine($"Итоговый балл: {totalScore}");
 
+// Задание 1.
 Console.Write("Введите целое число: ");
 int yourNum = int.Parse(Console.ReadLine());
-
-bool isEven = yourNum % 2;
+int yourNumIs =  yourNum % 2;
+bool isEven = yourNumIs == 0;
 Console.WriteLine(isEven);
 
